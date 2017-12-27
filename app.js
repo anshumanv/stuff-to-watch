@@ -1,4 +1,5 @@
 let express = require('express');
+let todoController = require('./controllers/todoController');
 
 // init app
 let app = express();
@@ -6,10 +7,8 @@ let app = express();
 // Set assets directory
 app.use(express.static('public'));
 
-// Routing for index page
-app.get('/', function(req, res) {
-	res.send('Hey there');
-});
+// Fire controllers
+todoController(app);
 
 // Listen to requests on port 3000
 app.listen(3000);
