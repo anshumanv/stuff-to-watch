@@ -1,0 +1,27 @@
+{
+  "name": "stuff-to-watch",
+  "version": "1.0.0",
+  "description": "A simple express app to manage watchlist",
+  "main": "app.js",
+  "scripts": {
+    "test": "xo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anshumanv/stuff-to-watch.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "watchlist",
+    "anime",
+    "movies",
+    "tvseries"
+  ],
+  "author": "anshumanv",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anshumanv/stuff-to-watch/issues"
+  },
+  "homepage": "https://github.com/anshumanv/stuff-to-watch#readme"
+}
