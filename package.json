@@ -4,7 +4,10 @@
   "description": "A simple express app to manage watchlist",
   "main": "app.js",
   "scripts": {
-    "test": "xo"
+    "start": "node app.js",
+    "dev": "nodemon app",
+    "test": "xo",
+    "lint": "xo --fix"
   },
   "repository": {
     "type": "git",

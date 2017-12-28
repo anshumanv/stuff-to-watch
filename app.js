@@ -1,8 +1,8 @@
-let express = require('express');
-let stwController = require('./controllers/stwController');
+const express = require('express');
+const stwController = require('./controllers/stw-controller');
 
-// init app
-let app = express();
+// Init app
+const app = express();
 
 // Set templating engine for the app
 app.set('view engine', 'ejs');
