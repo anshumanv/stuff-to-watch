@@ -1,9 +1,12 @@
 $(document).ready(function(){
 
   $('form').on('submit', function(){
-
+      location.href = "/";
+      
       let item = $('form input');
       let list = {item: item.val()};
+      
+      // Make an ajax request to update data
       $.ajax({
         type: 'POST',
         url: '/',
