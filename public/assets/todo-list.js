@@ -7,10 +7,10 @@ $(document).ready(function(){
 
       $.ajax({
         type: 'POST',
-        url: '/todo',
+        url: '/',
         data: todo,
         success: function(data){
-          //do something with the data via front-end framework
+          //Reload the page on successfull addition
           location.reload();
         }
       });
@@ -23,9 +23,9 @@ $(document).ready(function(){
       let item = $(this).text().replace(/ /g, "-");
       $.ajax({
         type: 'DELETE',
-        url: '/todo/' + item,
+        url: '//' + item,
         success: function(data){
-          //do something with the data via front-end framework
+          //Reload the page on successful removal
           location.reload();
         }
       });

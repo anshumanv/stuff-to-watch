@@ -13,9 +13,9 @@
 			<button type="submit">Add to list</button>
 		</form>
 		<ul>
-			<li>OP</li>
-			<li>BNHA</li>
-			<li>AOT</li>
+			<% for(let i = 0; i < list.length; i++) { %>
+				<li><%= list[i].item %></li>
+			<% } %>
 		</ul>
 	</div>
 </body>
