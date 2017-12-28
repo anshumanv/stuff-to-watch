@@ -25,8 +25,9 @@ module.exports = function(app) {
 
 	app.post('/', urlencodedParser, (req, res) => {
 		// Get new submitted data from the view and update db
-		let newList = stw(req.body).save((err, data) => {
+		let newList = stw(req.body).save(function(err, data){
 			if (err) throw err;
+			console.log('asdsda');
 			res.json(data);
 		});
 	});

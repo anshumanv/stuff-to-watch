@@ -4,7 +4,7 @@ $(document).ready(function(){
 
       let item = $('form input');
       let todo = {item: item.val()};
-
+      console.log(todo);
       $.ajax({
         type: 'POST',
         url: '/',
@@ -23,7 +23,7 @@ $(document).ready(function(){
       let item = $(this).text().replace(/ /g, "-");
       $.ajax({
         type: 'DELETE',
-        url: '//' + item,
+        url: '/' + item,
         success: function(data){
           //Reload the page on successful removal
           location.reload();
