@@ -13,5 +13,5 @@ app.use(express.static('public'));
 // Fire controllers
 stwController(app);
 
-// Listen to requests on port 3000
-app.listen(3000);
+// Listen to requests on a port
+app.listen(process.env.PORT || 3000);
