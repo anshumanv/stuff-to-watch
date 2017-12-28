@@ -11,6 +11,7 @@ let stwSchema = new mongoose.Schema({
 	item: String
 });
 
+// Defining model for our app
 let stw = mongoose.model('stw', stwSchema);
 
 module.exports = function(app) {
@@ -27,7 +28,6 @@ module.exports = function(app) {
 		// Get new submitted data from the view and update db
 		let newList = stw(req.body).save(function(err, data){
 			if (err) throw err;
-			console.log('asdsda');
 			res.json(data);
 		});
 	});

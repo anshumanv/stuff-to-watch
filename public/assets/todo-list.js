@@ -3,12 +3,11 @@ $(document).ready(function(){
   $('form').on('submit', function(){
 
       let item = $('form input');
-      let todo = {item: item.val()};
-      console.log(todo);
+      let list = {item: item.val()};
       $.ajax({
         type: 'POST',
         url: '/',
-        data: todo,
+        data: list,
         success: function(data){
           //Reload the page on successfull addition
           location.reload();
